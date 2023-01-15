@@ -7,6 +7,18 @@ module.exports = {
       black: "rgba(75, 75, 75, 0.4)",
       grey: "rgba(147, 146, 146, 0.4)",
     },
+    maxWidth: {
+      "text-max": "700px",
+    },
+    container: {
+      center: true,
+    },
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1028px",
+      xl: "1440px",
+    },
     extend: {},
   },
   plugins: [],

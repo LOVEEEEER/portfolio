@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: "Sofia Sans", sans-serif;
+}
+
 body {
-  margin-top: 25px;
+  margin-top: 35px;
   background: rgb(15, 15, 15);
   background: linear-gradient(
     90deg,
