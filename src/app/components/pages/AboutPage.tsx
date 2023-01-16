@@ -4,7 +4,7 @@ import { stackList } from "../../constants/stackList";
 const AboutPage = () => {
   return (
     <main className="mb-10">
-      <h1 className="text-white md:text-7xl md:mb-28 text-5xl mb-10">
+      <h1 className="text-white md:text-7xl md:mb-16 text-5xl mb-10">
         Frontend engineer and UI/UX enthusiast based in Russia. I have serious
         passion for responsive UI, animations and creating intuitive, dynamic
         UX. I aim to create websites where motion and interaction are perfectly

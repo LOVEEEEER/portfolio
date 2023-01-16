@@ -3,9 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      white: "#d7f3f5",
+      white: "#FFFFFF",
       black: "rgba(75, 75, 75, 0.4)",
       grey: "rgba(147, 146, 146, 0.4)",
+      red: "rgb(247, 31, 31)",
+      transparent: "transparent",
     },
     maxWidth: {
       "text-max": "700px",
