@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { stackList } from "../../constants/stackList";
 
 const AboutPage = () => {
@@ -24,12 +25,12 @@ const AboutPage = () => {
             you minding a project? Let's discuss your project and see how we can
             turn it into an amazing experience
           </p>
-          <a
+          <Link
             className="text-white hover: cursor-pointer text-2xl"
-            href="https://t.me/hatesLov"
+            to="/contact"
           >
             Contact me
-          </a>
+          </Link>
         </div>
       </div>
     </main>
