@@ -14,6 +14,8 @@ const ContactPage = () => {
             <a
               className="text-white text-lg hover:opacity-70 transition-all duration-400"
               href="https://github.com/LOVEEEEER"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub
             </a>
@@ -22,6 +24,8 @@ const ContactPage = () => {
             <a
               className="text-white text-lg hover:opacity-70 transition-all duration-400"
               href="https://www.linkedin.com/in/nikita-demyanenko-b5b36b259/"
+              target="_blank"
+              rel="noreferrer"
             >
               Linkedin
             </a>
@@ -31,6 +35,8 @@ const ContactPage = () => {
             <a
               className="text-white text-lg hover:opacity-70 transition-all duration-400"
               href="https://t.me/hatesLov"
+              target="_blank"
+              rel="noreferrer"
             >
               Telegram
             </a>
@@ -39,6 +45,8 @@ const ContactPage = () => {
             <a
               className="text-white text-lg hover:opacity-70 transition-all duration-400"
               href="https://vk.com/whatsfuckbro"
+              target="_blank"
+              rel="noreferrer"
             >
               VK
             </a>
