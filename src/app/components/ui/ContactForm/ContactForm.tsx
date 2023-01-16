@@ -7,25 +7,22 @@ import Button from "../../common/Button";
 import { validatorConfig } from "./validatorConfig";
 
 interface IData {
-  name: string;
   email: string;
   message: string;
 }
 
 const initialState = {
-  name: "",
   email: "",
   message: "",
 };
 
 interface IErrors {
-  name?: string;
   email?: string;
   message?: string;
 }
 
 const fieldClasses: string =
-  "border-2 border-rose-50 bg-white rounded-xl mb-3 p-1 h-12 focus:outline-0 ";
+  "border-2 border-rose-50 bg-transparent text-white rounded-xl mb-3 p-1 h-12 focus:outline-0 ";
 
 const ContactForm = () => {
   const [data, setData] = useState<IData>(initialState);
@@ -51,6 +48,7 @@ const ContactForm = () => {
       try {
         await ticketService.put(ticket.id, ticket);
         setData(initialState);
+        toast("🦄 Successfully!");
       } catch (error) {
         toast.error("Failed to send ticket!");
       }
@@ -65,22 +63,12 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="self-center max-w-3xl md:w-fit w-80"
+      className="self-center max-w-3xl xl:ml-32 lg:ml-8 md:ml-4 md:mr-4 md:w-fit w-80"
     >
-      <h3 className="text-white mb-10 md:text-6xl text-2xl font-bold">
+      <h3 className="text-white mb-10 md:text-6xl text-4xl font-bold text-center md:text-left">
         Get touch with me
       </h3>
       <div className="flex flex-col">
-        <input
-          type="text"
-          name="name"
-          value={data.name}
-          placeholder="Your name..."
-          className={
-            fieldClasses + (!errors.name ? "border-white" : "border-red")
-          }
-          onChange={handleChange}
-        />
         <input
           type="text"
           name="email"
@@ -94,10 +82,11 @@ const ContactForm = () => {
         <textarea
           className={
             fieldClasses +
-            "h-36 " +
+            "h-44 " +
             (!errors.message ? "border-white" : "border-red")
           }
           name="message"
+          value={data.message}
           placeholder="Message..."
           onChange={handleChange}
         ></textarea>

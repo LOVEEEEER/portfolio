@@ -1,11 +1,6 @@
 import { ValidatorConfigType } from "../../../utils/validator";
 
 export const validatorConfig: ValidatorConfigType = {
-  name: {
-    isRequired: {
-      message: "Name is required!",
-    },
-  },
   email: {
     isRequired: {
       message: "Email is required!",

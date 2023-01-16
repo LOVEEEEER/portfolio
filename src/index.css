@@ -7,6 +7,10 @@ html {
   font-family: "Sofia Sans", sans-serif;
 }
 
+* {
+  transition: 0.3s;
+}
+
 body {
   margin-top: 35px;
   background: rgb(15, 15, 15);
@@ -15,6 +19,16 @@ body {
     rgba(15, 15, 15, 1) 0%,
     rgba(19, 20, 20, 1) 100%
   );
+  color: #83c2c8;
+}
+
+.content {
+  opacity: 0;
+  transition: 0.6s opacity linear;
+}
+
+.content.visible {
+  opacity: 1;
 }
 
 ::-webkit-scrollbar {

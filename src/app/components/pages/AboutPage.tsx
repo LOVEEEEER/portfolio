@@ -6,10 +6,16 @@ const AboutPage = () => {
   return (
     <main className="mb-10">
       <h1 className="text-white md:text-7xl md:mb-16 text-5xl mb-10">
-        Frontend engineer and UI/UX enthusiast based in Russia. I have serious
-        passion for responsive UI, animations and creating intuitive, dynamic
-        UX. I aim to create websites where motion and interaction are perfectly
-        integrated to form a unique experience.
+        <span className="text-white-selection">Frontend engineer</span> and{" "}
+        <span className="text-white-selection">UI/UX enthusiast</span> based in
+        Russia. I have serious passion for{" "}
+        <span className="text-white-selection">
+          responsive UI, animations and creating intuitive, dynamic UX
+        </span>
+        . I aim to create websites where motion and interaction are{" "}
+        <span className="text-white-selection">
+          perfectly integrated to form a unique experience.
+        </span>
       </h1>
       <div className="flex md:justify-between md:flex-row flex-col align-middle">
         <ul className="list-disc ml-3 mb-5">
@@ -26,7 +32,7 @@ const AboutPage = () => {
             turn it into an amazing experience
           </p>
           <Link
-            className="text-white hover: cursor-pointer text-2xl"
+            className="text-white hover: cursor-pointer text-2xl hover:opacity-70 ease-in duration-200"
             to="/contact"
           >
             Contact me

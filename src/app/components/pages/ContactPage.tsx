@@ -3,8 +3,8 @@ import ContactForm from "../ui/ContactForm/ContactForm";
 
 const ContactPage = () => {
   return (
-    <main className="md:flex md:align-middle md:border-2 md:border-white">
-      <div className="flex justify-center md:border-r-2 border-white md:w-8/12 w-full mb-24 md:mb-0">
+    <main className="md:flex border-dotted md:align-middle md:border-2 md:border-white">
+      <div className="flex md:justify-start justify-center border-dotted md:border-r-2 border-white md:w-8/12 w-full mb-14 md:mb-0">
         <ContactForm />
       </div>
       <div className="md:py-36 pl-12">
