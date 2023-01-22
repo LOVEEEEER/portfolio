@@ -83,13 +83,13 @@ const ContactForm = () => {
           className={
             fieldClasses +
             "h-44 " +
-            (!errors.message ? "border-white" : "border-red")
+            (!errors.message ? "border-white resize-none" : "border-red")
           }
           name="message"
           value={data.message}
           placeholder="Message..."
           onChange={handleChange}
-        ></textarea>
+        />
         <Button>Send!</Button>
       </div>
     </form>

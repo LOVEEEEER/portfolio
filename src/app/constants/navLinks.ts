@@ -12,11 +12,6 @@ export const navLinks: INav[] = [
   },
   {
     id: 2,
-    path: "/projects",
-    name: "Projects",
-  },
-  {
-    id: 3,
     path: "/contact",
     name: "Contacts",
   },

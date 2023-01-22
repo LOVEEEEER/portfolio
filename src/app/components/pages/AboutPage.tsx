@@ -18,14 +18,14 @@ const AboutPage = () => {
         </span>
       </h1>
       <div className="flex md:justify-between md:flex-row flex-col align-middle">
-        <ul className="list-disc ml-3 mb-5">
+        <ul className="md:list-disc list-none md:ml-3 mb-5">
           {stackList.map((item) => (
             <li className="text-white text-2xl" key={item.id}>
               {item.name}
             </li>
           ))}
         </ul>
-        <div className="ml-3">
+        <div className="md:ml-3">
           <p className="text-white text-2xl max-w-text-max mr-20 mb-5">
             Get in touch with me. I'm always interested about cool stuff. Are
             you minding a project? Let's discuss your project and see how we can
